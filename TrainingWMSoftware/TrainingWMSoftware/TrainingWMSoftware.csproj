@@ -1,0 +1,390 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{329DDB80-1BB4-4424-AD1D-DCDF1239CC31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrainingWMSoftware</RootNamespace>
+    <AssemblyName>TrainingWMSoftware</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackwardDigitSpan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackwardDigitSpan.Designer.cs">
+      <DependentUpon>BackwardDigitSpan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grid.Designer.cs">
+      <DependentUpon>grid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="letterSpanTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="letterSpanTask.Designer.cs">
+      <DependentUpon>letterSpanTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BackwardDigitSpan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BackwardDigitSpan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="letterSpanTask.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>letterSpanTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PseudowordsMachingDismaching.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PseudowordsMachingDismaching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traineelist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>traineelist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAddEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PseudowordsMachingDismaching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PseudowordsMachingDismaching.Designer.cs">
+      <DependentUpon>PseudowordsMachingDismaching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="traineeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>traineeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="traineeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>traineeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="traineeInformation.cs" />
+    <Compile Include="traineelist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traineelist.Designer.cs">
+      <DependentUpon>traineelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAddEdit.Designer.cs">
+      <DependentUpon>UserAddEdit.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\flowerball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\0.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\6.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\7.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\9.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\11.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\12.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\13.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\14.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\15.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\17.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\18.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\19.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\20.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\21.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\22.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\23.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\25.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\26.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\27.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\28.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\30.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\31.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\33.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\keyboard\34.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winnie-The-Pooh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winnie_the_pooh,_cartoons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40828.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tigger-standup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\408281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winnie-the-Pooh-Snowball-Fight-1-1024x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tigger-standup1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartoons__003407_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winnie-the-Pooh-Wallpaper-winnie-the-pooh-6616065-1024-768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40828_.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionmark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\Images\29.gif" />
+    <Content Include="bin\Debug\Images\1.bmp" />
+    <Content Include="bin\Debug\Images\2.bmp" />
+    <Content Include="bin\Debug\Images\3.bmp" />
+    <Content Include="bin\Debug\Images\4.bmp" />
+    <Content Include="bin\Debug\Images\40828.jpg" />
+    <Content Include="bin\Debug\Images\40828_.JPG" />
+    <Content Include="bin\Debug\InstallDate.txt" />
+    <Content Include="chord.wav" />
+    <Content Include="Fchord.wav" />
+    <None Include="Properties\DataSources\TrainingWMSoftware.Properties.Resources.datasource" />
+    <None Include="Resources\Winnie-The-Pooh25.jpg" />
+    <None Include="Resources\Winnie-The-Pooh24.jpg" />
+    <None Include="Resources\Winnie-The-Pooh23.jpg" />
+    <None Include="Resources\Winnie-The-Pooh22.jpg" />
+    <None Include="Resources\Winnie-The-Pooh21.jpg" />
+    <None Include="Resources\Winnie-The-Pooh2.jpg" />
+    <None Include="Resources\embroidery_disc_pooh1all2.gif" />
+    <None Include="bin\Debug\Images\Cartoons__003407_.jpg" />
+    <None Include="traineeDataSet.xsc">
+      <DependentUpon>traineeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="traineeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>traineeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="traineeDataSet.xss">
+      <DependentUpon>traineeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="traineeDataSet1.xsc">
+      <DependentUpon>traineeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="traineeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>traineeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="traineeDataSet1.xss">
+      <DependentUpon>traineeDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
